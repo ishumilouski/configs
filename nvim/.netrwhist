@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/Users/iharshumilouski/Development/consensus/web2/app/components/VideoRecorder'
+let g:netrw_dirhist_4='/Users/iharshumilouski/Development/consensus/web2/app/components/VideoRecorder/components/SelectDevices'
+let g:netrw_dirhist_3='/Users/iharshumilouski/.config/.git'
 let g:netrw_dirhist_2='/Users/iharshumilouski/Development/consensus/web2/app/components/Loader'
 let g:netrw_dirhist_1='/Users/iharshumilouski/Development/consensus/web2/app/components'
