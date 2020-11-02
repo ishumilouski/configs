@@ -24,3 +24,12 @@ set completeopt=menuone,preview
 " ========
 
 set path=app/**,*.*,src/**
+
+" plugins
+call plug#begin('~/.vim/plugged')
+Plug 'arcticicestudio/nord-vim' " theme
+call plug#end()
+" =======
+
+
+colorscheme nord
