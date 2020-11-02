@@ -20,16 +20,30 @@ set nohlsearch
 set wildignorecase
 set wildmenu
 set wildmode=full
-set completeopt=menuone,preview
+set completeopt=menuone
 " ========
 
 set path=app/**,*.*,src/**
 
 " plugins
-call plug#begin('~/.vim/plugged')
-Plug 'arcticicestudio/nord-vim' " theme
+call plug#begin('~/.config/nvim/plugged')
+Plug 'arcticicestudio/nord-vim'     " theme
+" syntax highlighting
+Plug 'pangloss/vim-javascript'      " JavaScript support
+Plug 'leafgarland/typescript-vim'   " TypeScript syntax
+Plug 'peitalin/vim-jsx-typescript'
+" =======
+Plug 'ycm-core/YouCompleteMe'       " Autocompletion
+" autoformatting
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 call plug#end()
 " =======
 
-
 colorscheme nord
+
+" YouCompleteMe
+let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_always_populate_location_list = 1
+" ======
